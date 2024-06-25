@@ -1,0 +1,54 @@
+.quiz-container {
+    max-width : 600px ;
+    margin : 0 auto ;
+    padding: 20px;
+    border : 1px solid #ddd ;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+.question-card {
+    margin-bottom: 20px;
+}
+
+.question-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.question-card form div {
+    margin-bottom: 10px;
+}
+
+.question-card label{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.question-card input[type='radio']{
+    margin-right: 10px;
+};
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color : #fff ;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button :disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 1rem;
+}
