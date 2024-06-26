@@ -94,6 +94,13 @@ const Widget = () => {
         }
     };
 
+    const handleRestart = () => {
+        setCurrentQuestion(0);
+        setSelectedOption('');
+        setScore(0);
+        setShowResult(false);
+    };
+
     if (!quizData || quizData.length === 0) {
         return <div>Loading quiz data...</div>;
     }
@@ -103,7 +110,8 @@ const Widget = () => {
             {showResult ? (
                 <div className='result'>
                     <h2>Quiz Result</h2>
-                    <p>You answered {score} out of {quizData.length} questions correctly!</p>     
+                    <p>You answered  correctly at{score}/{quizData.length} questions !</p>     
+                    <button onClick={handleRestart}>Reload</button>
                 </div>       
             ) : (
                 <div className='question-card'> 
